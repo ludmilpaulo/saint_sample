@@ -6,7 +6,7 @@ export const getCurrentTheme = () => {
     ? "dark"
     : "light";
 
-  if (darkMode && darkMode !== "ON") {
+  if (darkMode && darkMode !== "on") {
     theme = "dark";
   } else {
     theme = "light";
