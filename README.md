@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Clone LIV Nightclub Miami Website
 
-## Getting Started
+### Objective
+Create a pixel-perfect, responsive clone of the [LIV Nightclub Miami](https://www.livnightclub.com/miami) website. The cloned site must replicate the visual design, functionality, and responsiveness exactly.
 
-First, run the development server:
+### Key Requirements
+- **Design & UI:**
+  - Clone homepage layout exactly.
+  - Responsive design (mobile, tablet, desktop).
+  - Maintain visual aesthetics (fonts, colors, images, etc.).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Features & Functionalities:**
+  - Menu navigation with smooth scrolling.
+  - Event listings and calendar integration.
+  - Ticket purchase links (dummy links acceptable).
+  - Social media integration.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Performance & SEO:**
+  - Optimized images and assets.
+  - SEO-friendly markup.
+  - Fast page-load times.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Tech Stack
+- React
+- Next.js
+- TailwindCSS
+- TypeScript
+- Django (backend, managed by Ludmil)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Task Breakdown
 
-## Learn More
+**Amadi**
+- Set up Next.js project structure.
+- Clone navigation, header, and footer.
+- Homepage responsive layout implementation.
+- Integrate TailwindCSS for styling.
+- Create services to interact with API using mock JSON data.
 
-To learn more about Next.js, take a look at the following resources:
+**Jorgina**
+- Implement event calendar and listings.
+- Integrate ticket purchase links and buttons.
+- Optimize assets (images and SEO markup).
+- Ensure responsiveness and cross-browser compatibility.
+- Create services to interact with API using mock JSON data.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Documentation: Gizela**
+- Create comprehensive user manual and documentation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Backend Developer: Ludmil**
+- Django backend setup and API development.
 
-## Deploy on Vercel
+### Deliverables
+- Functional GitHub repository with clear commits.
+- Deployment-ready Next.js application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Timeline
+- **Kick-off:** 21 March 2025
+- **Completion:** One week from kick-off
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Acceptance Criteria
+- Pixel-perfect visual clone.
+- Fully responsive across all devices.
+- Clean, maintainable, and documented code.
+
+### Reference
+Original website: [LIV Nightclub Miami](https://www.livnightclub.com/miami)
+
+---
+
+### Notes
+- Please create branches for each feature and submit pull requests for code review.
+- Regular updates and communication expected.
+
