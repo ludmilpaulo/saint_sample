@@ -20,7 +20,7 @@ const Layout = ({ children }: Props) => {
     }
     loadTheme(getCurrentTheme());
   }, [dispatch]);
-  return <body>{children}</body>;
+  return <>{children}</>;
 };
 
 export default Layout;

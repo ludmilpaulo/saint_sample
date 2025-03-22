@@ -15,13 +15,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Provider>
-        <StoreProvider>
-          <Layout>
-            <div>{children}</div>
-          </Layout>
-        </StoreProvider>
-      </Provider>
+      <body>
+        <Provider>
+          <StoreProvider>
+            <Layout>
+              <main className="bg-[var(--background)]">{children}</main>
+            </Layout>
+          </StoreProvider>
+        </Provider>
+      </body>
     </html>
   );
 }
