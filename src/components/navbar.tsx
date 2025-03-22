@@ -19,9 +19,14 @@ const NavigationBar = () => {
     <nav className="bg-[var(--background)]">
       <section className="flex items-center justify-between px-12  h-[10vh]">
         <h1 className="text-[var(--text)] font-monoton text-4xl">SAINTS</h1>
-        <ul className="flex gap-2">
+        <ul className="flex gap-8">
           {menu.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li
+              key={index}
+              className="text-[var(--text)] cursor-pointer hover:text-[var(--primary)] transition-all duration-500 font-bold uppercase"
+            >
+              {item}
+            </li>
           ))}
         </ul>
         <IconButton
@@ -29,7 +34,11 @@ const NavigationBar = () => {
           rounded="full"
           onClick={toggleDarkMode}
         >
-          {darkMode ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
+          {darkMode ? (
+            <MdOutlineDarkMode className="text-[var(--text)]" />
+          ) : (
+            <MdOutlineLightMode className="text-[var(--text)]" />
+          )}
         </IconButton>
       </section>
       <span className="md:hidden">
