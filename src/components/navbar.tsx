@@ -1,10 +1,11 @@
 "use client";
 import React, { useContext } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import { IconButton } from "@chakra-ui/react";
+// import { IconButton } from "@chakra-ui/react";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { ContextStore } from "@/utils/contexts/context-api";
 import { ActionType } from "@/types/type.context";
+import IconButton from "./icon-button";
 
 const NavigationBar = () => {
   const menu = ["Events", "Venue", "Corporate", "Hotel", "Reserve", "FAQs"];
@@ -32,7 +33,7 @@ const NavigationBar = () => {
         <div className="flex items-center justify-end gap-2">
           <IconButton
             aria-label="Toggle darkmode"
-            rounded="full"
+            // rounded="full"
             onClick={toggleDarkMode}
             className="hover:text-[var(--primary)] hover:bg-[var(--foreground)] transition-all duration-500"
           >

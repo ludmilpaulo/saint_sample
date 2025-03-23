@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { background_video } from "@/utils/data/constants";
-import { IconButton } from "@chakra-ui/react";
+// import { IconButton } from "@chakra-ui/react";
 import { MdVolumeOff, MdVolumeUp } from "react-icons/md";
+import IconButton from "@/components/icon-button";
 
 const HeroSection = () => {
   const [mute, setMute] = useState<boolean>(true);
@@ -13,7 +14,7 @@ const HeroSection = () => {
       </div>
       <IconButton
         className="absolute bottom-2 right-[20px] text-white bg-black opacity-70 hover:bg-[var(--primary)] transition-all duration-500"
-        rounded="full"
+        // rounded="full"
         onClick={() => setMute(!mute)}
       >
         {mute ? <MdVolumeOff /> : <MdVolumeUp />}

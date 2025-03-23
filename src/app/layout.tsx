@@ -1,7 +1,6 @@
 import Layout from "@/components/layout";
 import type { Metadata } from "next";
 import { StoreProvider } from "@/utils/contexts/context-api";
-import { Provider } from "@/components/ui/provider";
 
 export const metadata: Metadata = {
   title: "Saints Website",
@@ -16,13 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Provider>
-          <StoreProvider>
-            <Layout>
-              <main className="bg-[var(--background)]">{children}</main>
-            </Layout>
-          </StoreProvider>
-        </Provider>
+        <StoreProvider>
+          <Layout>
+            <main className="bg-[var(--background)]">{children}</main>
+          </Layout>
+        </StoreProvider>
       </body>
     </html>
   );
