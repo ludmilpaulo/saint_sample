@@ -47,3 +47,15 @@ body {
   height: 100vh;
   transition: all 0.5s ease-in-out;
 }
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 450px;
+  /* flex: 0 0 100%; */
+  /* flex: 100%; */
+  width: fit-content;
+}

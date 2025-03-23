@@ -6,10 +6,10 @@ type Props = {
   className?: string;
   onClick?: () => void;
 };
-const IconButton = ({ size, children, onClick, className }: Props) => {
+const IconButton = ({ size = 50, children, onClick, className }: Props) => {
   return (
     <button
-      className={`w-[${size || 40}px] h-[${size || 40}px] ${className}`}
+      className={`w-[${size}px] h-[${size}px] ${className} rounded-full flex justify-center items-center transition-all duration-500 bg-[var(--foreground)] text-[var(--text)] p-2`}
       onClick={onClick}
     >
       {children}

@@ -13,7 +13,7 @@ const HeroSection = () => {
         tickets & tables
       </div>
       <IconButton
-        className="absolute bottom-2 right-[20px] text-white bg-black opacity-70 hover:bg-[var(--primary)] transition-all duration-500"
+        className="absolute bottom-2 right-[20px] opacity-70 hover:bg-[var(--primary)] transition-all duration-500"
         // rounded="full"
         onClick={() => setMute(!mute)}
       >

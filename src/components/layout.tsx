@@ -6,6 +6,7 @@ import { getCurrentTheme, loadTheme } from "@/utils/manage-theme";
 import { ActionType } from "@/types/type.context";
 
 import "@styles/main.css";
+import "@splidejs/react-splide/css/core";
 interface Props {
   children: React.ReactNode;
 }
