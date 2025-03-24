@@ -30,7 +30,7 @@ const EventCard = ({ image, title, date }: Props) => {
         <span className="w-[2px] h-full bg-[var(--text)]" />
         <p>{title}</p>
       </div>
-      <span className="absolute bottom-0 w-full h-[2px] bg-[var(--text)] group-hover:w-0 transition-all duration-500" />
+      <span className="absolute bottom-0 w-full h-[2px] bg-[var(--secondary)] group-hover:w-0 transition-all duration-500 float-right" />
     </div>
   );
 };

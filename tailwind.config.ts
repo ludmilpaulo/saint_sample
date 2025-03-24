@@ -13,7 +13,7 @@ const config: Config = {
         quicksand: ["Quicksand"],
         montserrat: ["Montserrat"],
         monoton: ["Monoton"],
-        "josefin-sans": ["Josefin-Sans"],
+        "josefin-sans": ["Josefin Sans"],
       },
     },
   },

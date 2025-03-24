@@ -24,9 +24,11 @@ const NavigationBar = () => {
           {menu.map((item, index) => (
             <li
               key={index}
-              className="text-[var(--text)] cursor-pointer hover:text-[var(--primary)] transition-all duration-500 font-bold uppercase"
+              className="relative group text-[var(--text)] cursor-pointer transition-all duration-500 font-bold uppercase w-fit"
             >
-              {item}
+              <p>{item}</p>
+
+              <span className="absolute bottom-0 w-0 h-[2px] bg-[var(--secondary)] group-hover:w-full transition-all duration-500" />
             </li>
           ))}
         </ul>
