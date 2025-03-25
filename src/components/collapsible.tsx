@@ -25,7 +25,7 @@ const Collapsible = ({ children, title }: Props) => {
       </div>
       <div
         className={`${
-          open ? "" : "h-0"
+          open ? "h-full" : "h-0"
         } overflow-hidden transition-all duration-500 text-[var(--text)] pr-2`}
       >
         {children}

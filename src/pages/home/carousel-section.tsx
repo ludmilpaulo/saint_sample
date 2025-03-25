@@ -5,7 +5,7 @@ import IconButton from "@/components/icon-button";
 import useEmblaCarousel from "embla-carousel-react";
 import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 // import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import { events } from "@/utils/data/constants";
+import { events } from "@/utils/data/events";
 import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
 
 const CarouselSection = () => {
