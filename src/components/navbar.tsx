@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 // import { IconButton } from "@chakra-ui/react";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
@@ -8,6 +8,7 @@ import { ActionType } from "@/types/type.context";
 import IconButton from "./icon-button";
 
 const NavigationBar = () => {
+  const [open, setOpen] = useState<boolean>(false);
   const menu = ["Events", "Venue", "Corporate", "Hotel", "Reserve", "FAQs"];
 
   const { state, dispatch } = useContext(ContextStore);
@@ -17,7 +18,7 @@ const NavigationBar = () => {
     dispatch({ type: ActionType.toggle_darkMode });
   };
   return (
-    <nav className="bg-[var(--background)] sticky top-0 z-10 overflow-hidden w-full">
+    <nav className="bg-[var(--background)] sticky top-0 z-10 w-full">
       <section className="flex items-center justify-between px-4 md:px-12 h-[10vh]">
         <h1 className="text-[var(--text)] font-monoton text-2xl md:text-4xl">
           SAINTS
@@ -48,12 +49,27 @@ const NavigationBar = () => {
             )}
           </IconButton>
 
-          <span className="lg:hidden text-[var(--text)]">
-            <Hamburger size={24} />
+          <span className="lg:hidden text-[var(--text)] z-50">
+            <Hamburger size={24} onToggle={setOpen} />
           </span>
         </div>
       </section>
-      {/* <div className="h-[100vh] w-[100%] bg-[var(--background)] absolute top-0 z-20"></div> */}
+      {open && (
+        <div className="h-[100vh] w-[100%] bg-[var(--background)] absolute top-0 z-20 flex flex-col items-center justify-center">
+          <ul className="flex flex-col items-center gap-4">
+            {menu.map((item, index) => (
+              <li
+                key={index}
+                className="relative group text-[var(--text)] cursor-pointer transition-all duration-500 font-bold uppercase w-fit text-lg sm:text-2xl"
+              >
+                <p>{item}</p>
+
+                <span className="absolute bottom-0 w-0 h-[2px] bg-[var(--secondary)] group-hover:w-full transition-all duration-500" />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
