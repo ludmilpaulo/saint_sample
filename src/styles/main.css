@@ -55,7 +55,18 @@ body {
 }
 .embla__slide {
   flex: 0 0 450px;
-  /* flex: 0 0 100%; */
-  /* flex: 100%; */
   width: fit-content;
+}
+
+@media (width <= 40rem) {
+  /* .embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  } */
+  .embla__slide {
+    flex: 0 0 100%;
+    width: fit-content;
+  }
 }

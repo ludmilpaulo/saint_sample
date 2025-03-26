@@ -22,7 +22,7 @@ const CarouselSection = () => {
 
   return (
     <section className="flex flex-col gap-6 items-center">
-      <section className="w-[90%] mx-auto my-10 flex items-center gap-4">
+      <section className="w-full px-2 md:px-0 md:w-[90%] mx-auto my-10 flex items-center gap-4">
         <IconButton onClick={scrollPrev} className="embla__prev" size={70}>
           <RiArrowLeftWideFill />
         </IconButton>

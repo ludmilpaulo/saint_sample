@@ -16,7 +16,7 @@ interface Props {
 const PostCard = ({ post }: Props) => {
   const { image, isMultiplePost, media_type } = post;
   return (
-    <div className="h-[40vh] w-[450px] overflow-hidden group relative cursor-pointer">
+    <div className="h-[40vh] w-[100%] xl:w-[450px] overflow-hidden group relative cursor-pointer">
       <img
         src={image}
         alt="post"

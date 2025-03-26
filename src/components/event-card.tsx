@@ -13,7 +13,7 @@ const EventCard = ({ image, title, date }: Props) => {
   const month = dateObj.toLocaleString("default", { month: "short" });
   const date_ = dateObj.getDate();
   return (
-    <div className="flex flex-col overflow-hidden h-[60vh] w-[450px] mx-4 relative cursor-pointer group">
+    <div className="flex flex-col overflow-hidden h-[60vh] w-[100%] md:w-[450px] md:mx-4 relative cursor-pointer group">
       <div className="h-[50vh] overflow-hidden">
         <img
           src={image}

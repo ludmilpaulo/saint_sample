@@ -7,9 +7,9 @@ import IconButton from "@/components/icon-button";
 const HeroSection = () => {
   const [mute, setMute] = useState<boolean>(true);
   return (
-    <header className="h-auto md:h-[80vh] overflow-hidden flex items-center justify-center relative">
+    <header className="h-[30vh] lg:h-[40vh] xl:h-[80vh] overflow-hidden flex items-center justify-center relative">
       <video src={background_video} autoPlay loop muted={mute} />
-      <div className="absolute top-[10vh] md:top-[5vh] right-[20px] w-[15vh] h-[15vh] p-4 bg-black opacity-70 rounded-full flex items-center justify-center uppercase text-white font-bold text-center text-sm md:text-lg font-quicksand hover:rotate-12 hover:bg-[var(--primary)] transition-all duration-500 cursor-pointer">
+      <div className="absolute top-[2vh] md:top-[5vh] right-[5px] md:right-[20px] w-[10vh] h-[10vh]  lg:h-[15vh] lg:w-[15vh] p-4 bg-black opacity-70 rounded-full flex items-center justify-center uppercase text-white font-bold text-center text-xs lg:text-lg font-quicksand hover:rotate-12 hover:bg-[var(--primary)] transition-all duration-500 cursor-pointer">
         tickets & tables
       </div>
       <IconButton

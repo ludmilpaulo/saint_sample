@@ -17,10 +17,12 @@ const NavigationBar = () => {
     dispatch({ type: ActionType.toggle_darkMode });
   };
   return (
-    <nav className="bg-[var(--background)] sticky top-0 z-50 overflow-hidden">
+    <nav className="bg-[var(--background)] sticky top-0 z-10 overflow-hidden w-full">
       <section className="flex items-center justify-between px-4 md:px-12 h-[10vh]">
-        <h1 className="text-[var(--text)] font-monoton text-4xl">SAINTS</h1>
-        <ul className="hidden md:flex gap-8 ">
+        <h1 className="text-[var(--text)] font-monoton text-2xl md:text-4xl">
+          SAINTS
+        </h1>
+        <ul className="hidden lg:flex gap-8 ">
           {menu.map((item, index) => (
             <li
               key={index}
@@ -37,7 +39,7 @@ const NavigationBar = () => {
             aria-label="Toggle darkmode"
             // rounded="full"
             onClick={toggleDarkMode}
-            className="hover:text-[var(--primary)] hover:bg-[var(--foreground)] transition-all duration-500"
+            className="hover:text-[var(--primary)] hover:bg-[var(--foreground)] transition-all duration-500 w-[30px] h-[30px] md:w-[40px] md:h-[40px]"
           >
             {darkMode ? (
               <MdOutlineDarkMode className="text-[var(--text)]" />
@@ -46,11 +48,12 @@ const NavigationBar = () => {
             )}
           </IconButton>
 
-          <span className="md:hidden text-[var(--text)]">
+          <span className="lg:hidden text-[var(--text)]">
             <Hamburger size={24} />
           </span>
         </div>
       </section>
+      {/* <div className="h-[100vh] w-[100%] bg-[var(--background)] absolute top-0 z-20"></div> */}
     </nav>
   );
 };

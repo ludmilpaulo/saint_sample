@@ -17,7 +17,7 @@ export default function RootLayout({
       <body>
         <StoreProvider>
           <Layout>
-            <main className="bg-[var(--background)]">{children}</main>
+            <main className="bg-[var(--background)] relative">{children}</main>
           </Layout>
         </StoreProvider>
       </body>

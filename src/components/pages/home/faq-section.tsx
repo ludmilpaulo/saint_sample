@@ -3,12 +3,12 @@ import React from "react";
 
 const FAQSection = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 w-[70%] m-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full px-4 xl:px-0 xl:w-[70%] m-auto overflow-hidden">
       <div className="flex flex-col text-[var(--text)] gap-4">
-        <h1 className="text-4xl font-bold uppercase">
+        <h1 className="text-xl lg:text-4xl font-bold uppercase">
           Frequently Asked Questions
         </h1>
-        <p>
+        <p className="text-sm lg:text-lg">
           Answers to all your VIP Nightlife and Bottle Service questions and
           more. If you haven’t found what you’re looking for, please contact us
           at the link below.

@@ -36,9 +36,9 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="flex flex-col min-h-[30vh] justify-between">
-      <div className="pt-10 flex gap-24 justify-between px-12">
-        <div className="flex gap-4 flex-col">
+    <footer className="flex flex-col min-h-[30vh] justify-between overflow-hidden">
+      <div className="pt-10 flex flex-col lg:flex-row lg:flex-wrap gap-4 lg:gap-24 justify-between px-12">
+        <div className="flex gap-4 flex-col items-center lg:items-start">
           <h1 className="font-monoton text-4xl text-[var(--text)]">saints</h1>
           <span className="flex gap-4 items-start justify-center">
             {socials.map((social, index) => (
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex py-8 px-12 justify-between">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start py-8 px-12 justify-between">
         <p className="text-[var(--text)] text-xs">
           © 2025 Saints Nightclub - All Rights Reserved.
         </p>
