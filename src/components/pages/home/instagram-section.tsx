@@ -1,3 +1,5 @@
+import PostCard from "@/components/post-card";
+import { posts } from "@/utils/data/posts";
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 
@@ -8,6 +10,11 @@ const InstagramSection = () => {
         <FaInstagram />
         Follow us on instagram
       </h1>
+      <div className="grid grid-cols-3">
+        {posts.map((post, index) => (
+          <PostCard post={post} key={index} />
+        ))}
+      </div>
     </div>
   );
 };

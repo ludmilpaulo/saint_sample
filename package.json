@@ -14,6 +14,7 @@
     "@gsap/react": "^2.1.2",
     "@mui/material": "^6.4.8",
     "@splidejs/react-splide": "^0.7.12",
+    "cloudinary": "^2.6.0",
     "embla-carousel-react": "^8.5.2",
     "embla-carousel-wheel-gestures": "^8.0.1",
     "hamburger-react": "^2.5.2",
