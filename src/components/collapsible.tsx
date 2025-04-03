@@ -13,19 +13,21 @@ const Collapsible = ({ children, title }: Props) => {
         onClick={() => setOpen(!open)}
         className="cursor-pointer items-center justify-between flex w-full py-2 border-b-2 text-[var(--text)] border-b-[var(--secondary)] pr-2 hover:border-b-[var(--primary)] transition-all duration-500"
       >
-        <p>{title}</p>
+        <p className="uppercase font-bold text-xs md:text-md lg:text-lg">
+          {title}
+        </p>
         <div className="relative h-[50px] w-[50px]">
           <span
-            className={`absolute h-[35px] w-[3px] bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ${
+            className={`absolute h-[18px] md:h-[35px] w-[3px] bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ${
               open ? "rotate-90" : ""
             }`}
           />
-          <span className="absolute h-[35px] w-[3px] rotate-90 bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+          <span className="absolute h-[18px] w-[3] md:h-[35px] rotate-90 bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
         </div>
       </div>
       <div
         className={`${
-          open ? "h-full" : "h-0"
+          open ? "max-h-[1000px]" : "max-h-0"
         } overflow-hidden transition-all duration-500 text-[var(--text)] pr-2`}
       >
         {children}

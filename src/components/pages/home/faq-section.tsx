@@ -1,4 +1,5 @@
 import Collapsible from "@/components/collapsible";
+import { dress_codes, hours_of_operation } from "@/utils/data/constants";
 import React from "react";
 
 const FAQSection = () => {
@@ -18,14 +19,47 @@ const FAQSection = () => {
         </button>
       </div>
       <div>
-        <Collapsible title="What is VIP Nightlife?">
-          <div>Hello</div>
+        <Collapsible title="dress code">
+          <div className="text-[var(--text)] text-xs md:text-md font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
+            <p>
+              Proper Dress Attire Required. Venue reserves the right to deny
+              entry at doorman’s discretion.
+            </p>
+            <ul className="list-disc list-inside ml-2">
+              {dress_codes.map((code, index) => (
+                <li key={index}>{code}</li>
+              ))}
+            </ul>
+          </div>
         </Collapsible>
-        <Collapsible title="What is VIP Nightlife?">
-          <div>Hello</div>
+        <Collapsible title="hours of operation">
+          <div className="text-[var(--text)] text-xs md:text-md font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
+            {hours_of_operation.map((hour, index) => (
+              <p key={index}>{hour}</p>
+            ))}
+          </div>
         </Collapsible>
-        <Collapsible title="What is VIP Nightlife?">
-          <div>Hello</div>
+        <Collapsible title="Age requirements">
+          <div className="text-[var(--text)] text-xs md:text-md font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
+            <p>Age 21 and over. Entry is permitted with proper ID only.</p>
+            <p>
+              Acceptable identification includes: U.S driver’s license and all
+              U.S. & international passports recognized by the U.S.
+            </p>
+            <p className="mt-4">
+              If you are not a U.S. resident, you must present your passport to
+              enter the venue. Foreign government issued IDs will NOT be
+              accepted.
+            </p>
+          </div>
+        </Collapsible>
+        <Collapsible title="What type of music is featured at saints?">
+          <div className="text-[var(--text)] text-xs md:text-md font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
+            <p>
+              Music format depends on the night of the week. Visit our calendar
+              for detailed information on specific nights and events.
+            </p>
+          </div>
         </Collapsible>
       </div>
     </div>
