@@ -18,7 +18,7 @@ const NavigationBar = () => {
     dispatch({ type: ActionType.toggle_darkMode });
   };
   return (
-    <nav className="bg-[var(--background)] sticky top-0 z-10 w-full">
+    <nav className="bg-[var(--background)] sticky top-0 z-10 w-full border-b-4 border-b-[var(--secondary)]">
       <section className="flex items-center justify-between px-4 md:px-12 h-[10vh]">
         <h1 className="text-[var(--text)] font-monoton text-2xl md:text-4xl">
           SAINTS
