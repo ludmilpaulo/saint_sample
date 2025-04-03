@@ -36,7 +36,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="flex flex-col min-h-[30vh] justify-between overflow-hidden">
+    <footer className="flex flex-col min-h-[30vh] justify-between overflow-hidden border-t-4 border-[var(--secondary)] mt-6">
       <div className="pt-10 flex flex-col lg:flex-row lg:flex-wrap gap-4 lg:gap-24 justify-between px-12">
         <div className="flex gap-4 flex-col items-center lg:items-start">
           <h1 className="font-monoton text-4xl text-[var(--text)]">saints</h1>
