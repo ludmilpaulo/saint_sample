@@ -22,7 +22,7 @@ const Collapsible = ({ children, title }: Props) => {
               open ? "rotate-90" : ""
             }`}
           />
-          <span className="absolute h-[18px] w-[3] md:h-[35px] rotate-90 bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+          <span className="absolute h-[18px] md:h-[35px] w-[3px] rotate-90 bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
         </div>
       </div>
       <div
