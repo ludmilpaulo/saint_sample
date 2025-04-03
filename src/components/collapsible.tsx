@@ -11,18 +11,18 @@ const Collapsible = ({ children, title }: Props) => {
     <div>
       <div
         onClick={() => setOpen(!open)}
-        className="cursor-pointer items-center justify-between flex w-full py-2 border-b-2 text-[var(--text)] border-b-[var(--secondary)] pr-2 hover:border-b-[var(--primary)] transition-all duration-500"
+        className="h-[60px] cursor-pointer justify-between flex w-full border-b-2 text-[var(--text)] border-b-[var(--secondary)] pr-2 hover:border-b-[var(--primary)] transition-all duration-500"
       >
-        <p className="uppercase font-bold text-xs md:text-md lg:text-lg">
+        <article className="uppercase font-bold text-xs md:text-md lg:text-lg py-0">
           {title}
-        </p>
-        <div className="relative h-[50px] w-[50px]">
+        </article>
+        <div className="relative h-[25px] w-[25px] my-auto">
           <span
-            className={`absolute h-[18px] md:h-[35px] w-[3px] bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ${
+            className={`absolute h-[18px] md:h-[25px] w-[3px] bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ${
               open ? "rotate-90" : ""
             }`}
           />
-          <span className="absolute h-[18px] md:h-[35px] w-[3px] rotate-90 bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+          <span className="absolute h-[18px] md:h-[25px] w-[3px] rotate-90 bg-[var(--text)] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
         </div>
       </div>
       <div

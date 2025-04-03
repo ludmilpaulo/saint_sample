@@ -4,7 +4,7 @@ import React from "react";
 
 const FAQSection = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full px-4 xl:px-0 xl:w-[70%] m-auto overflow-hidden">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 w-full px-4 xl:px-0 xl:w-[70%] m-auto overflow-hidden">
       <div className="flex flex-col text-[var(--text)] gap-4">
         <h1 className="text-xl lg:text-4xl font-bold uppercase">
           Frequently Asked Questions
@@ -18,9 +18,9 @@ const FAQSection = () => {
           All FAQs
         </button>
       </div>
-      <div>
+      <div className="lg:col-span-2">
         <Collapsible title="dress code">
-          <div className="text-[var(--text)] text-xs md:text-md font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
+          <div className="text-[var(--text)] text-xs md:text-md lg:text-lg font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
             <p>
               Proper Dress Attire Required. Venue reserves the right to deny
               entry at doorman’s discretion.
@@ -33,14 +33,14 @@ const FAQSection = () => {
           </div>
         </Collapsible>
         <Collapsible title="hours of operation">
-          <div className="text-[var(--text)] text-xs md:text-md font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
+          <div className="text-[var(--text)] text-xs md:text-md lg:text-lg font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
             {hours_of_operation.map((hour, index) => (
               <p key={index}>{hour}</p>
             ))}
           </div>
         </Collapsible>
         <Collapsible title="Age requirements">
-          <div className="text-[var(--text)] text-xs md:text-md font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
+          <div className="text-[var(--text)] text-xs md:text-md lg:text-lg font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
             <p>Age 21 and over. Entry is permitted with proper ID only.</p>
             <p>
               Acceptable identification includes: U.S driver’s license and all
@@ -54,7 +54,7 @@ const FAQSection = () => {
           </div>
         </Collapsible>
         <Collapsible title="What type of music is featured at saints?">
-          <div className="text-[var(--text)] text-xs md:text-md font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
+          <div className="text-[var(--text)] text-xs md:text-md lg:text-lg font-semibold flex flex-col gap-2 border-b-2 border-b-[var(--secondary)] py-2">
             <p>
               Music format depends on the night of the week. Visit our calendar
               for detailed information on specific nights and events.
